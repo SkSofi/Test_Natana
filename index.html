@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Gaming Natana - Play Anywhere</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">NATANA</div>
+        <ul class="nav-links">
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="games">Games</a></li>
+            <li><a href="#" data-page="pricing">Pricing</a></li>
+            <li><a href="#" data-page="about">About</a></li>
+            <li><a href="#" data-page="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>Play Without Limits</h1>
+                <p>Experience AAA gaming on any device with Cloud Gaming Natana</p>
+                <button class="cta-button" onclick="navigate('games')">Explore Games</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose Natana?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Ultra-Low Latency</h3>
+                    <p>Experience gaming with less than 20ms latency thanks to our global edge network.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Play Anywhere</h3>
+                    <p>Stream on PC, Mac, mobile, or tablet. Your progress syncs seamlessly across all devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>RTX 4080 Power</h3>
+                    <p>Every session runs on server-grade hardware with ray tracing and 4K support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Massive Library</h3>
+                    <p>Access over 1,000 games from indie gems to AAA blockbusters.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>No Downloads</h3>
+                    <p>Jump into any game instantly. No installations, updates, or storage worries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Global Coverage</h3>
+                    <p>Servers in 45+ countries ensure the best performance wherever you are.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Games Page -->
+    <div id="games" class="page">
+        <div class="about-container">
+            <h2>Game Library</h2>
+            <p>Browse our extensive collection of games available for instant streaming.</p>
+        </div>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-img">🏎️</div>
+                <div class="game-info">
+                    <h3>Speed Legends</h3>
+                    <p>High-octane racing action with photorealistic graphics</p>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-img">⚔️</div>
+                <div class="game-info">
+                    <h3>Shadow Realm</h3>
+                    <p>Epic fantasy RPG with massive open world</p>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-img">🌌</div>
+                <div class="game-info">
+                    <h3>Stellar Conquest</h3>
+                    <p>Space exploration and strategy game</p>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-img">🧟</div>
+                <div class="game-info">
+                    <h3>Last Stand</h3>
+                    <p>Intense zombie survival shooter</p>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-img">🏰</div>
+                <div class="game-info">
+                    <h3>Kingdom Builder</h3>
+                    <p>Build and manage your medieval empire</p>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-img">🎯</div>
+                <div class="game-info">
+                    <h3>Strike Force</h3>
+                    <p>Tactical FPS with competitive multiplayer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Page -->
+    <div id="pricing" class="page">
+        <div class="pricing-container">
+            <div class="about-container">
+                <h2>Choose Your Plan</h2>
+                <p>Flexible pricing for every type of gamer. No hidden fees, cancel anytime.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-name">Basic</div>
+                    <div class="price">$9.99<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>1080p streaming</li>
+                        <li>Standard latency</li>
+                        <li>10 hours per month</li>
+                        <li>Basic game library</li>
+                        <li>1 device at a time</li>
+                    </ul>
+                    <button class="cta-button">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="plan-name">Pro</div>
+                    <div class="price">$19.99<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>4K streaming</li>
+                        <li>Ultra-low latency</li>
+                        <li>Unlimited hours</li>
+                        <li>Full game library</li>
+                        <li>2 devices simultaneously</li>
+                        <li>Priority server access</li>
+                        <li>Ray tracing enabled</li>
+                    </ul>
+                    <button class="cta-button">Most Popular</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Ultimate</div>
+                    <div class="price">$29.99<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>8K streaming</li>
+                        <li>Ultra-low latency</li>
+                        <li>Unlimited hours</li>
+                        <li>Full library + early access</li>
+                        <li>4 devices simultaneously</li>
+                        <li>Priority server access</li>
+                        <li>Ray tracing enabled</li>
+                        <li>Exclusive rewards</li>
+                    </ul>
+                    <button class="cta-button">Go Ultimate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="about-container">
+            <h2>About Natana</h2>
+            <p>Founded in 2024, Cloud Gaming Natana is revolutionizing how people experience video games. Our mission is to make high-end gaming accessible to everyone, regardless of their hardware.</p>
+            <p>We believe that great games should be available to all players, anywhere, anytime. By leveraging cutting-edge cloud technology and a global network of data centers, we've eliminated the barriers between players and the games they love.</p>
+            <p>Our team consists of gaming enthusiasts, cloud infrastructure experts, and UX designers who are passionate about creating the ultimate gaming experience.</p>
+            
+            <h2 style="margin-top: 3rem;">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar">👨‍💼</div>
+                    <h3>Alex Rivera</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">👩‍💻</div>
+                    <h3>Sarah Chen</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">👨‍🎨</div>
+                    <h3>Marcus Johnson</h3>
+                    <p>Head of Design</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">👩‍🔬</div>
+                    <h3>Dr. Emma Watson</h3>
+                    <p>Cloud Infrastructure Lead</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="contact-container">
+            <div class="about-container">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
