@@ -418,6 +418,51 @@ nav {
     transform: translateY(-3px);
 }
 
+/* Contact Info Cards */
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-info-card {
+            background: rgba(99, 102, 241, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .contact-info-card a {
+            color: var(--light);
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info-card a:hover {
+            opacity: 1;
+            color: var(--primary);
+        }
+
 /* Floating particles */
 .particle {
     position: fixed;
@@ -441,4 +486,5 @@ nav {
     .hero h1 { font-size: 2.5rem; }
     .hero p { font-size: 1.2rem; }
     .nav-links { gap: 1rem; font-size: 0.9rem; }
+
 }
